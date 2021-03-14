@@ -26,7 +26,7 @@ jobs:
     # Files, comma-separated. Supposed PLACEHOLDER in them
         files: 'dist/index.html'
     # Comma-separated pairs PLACEHOLDER=value
-        replacements: '"main-es="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/main-es,"runtime-es="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/runtime-es,"polyfills-es="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/polyfills-es,"main-es="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/main-es,"runtime-es="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/runtime-es,"polyfills-es="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/polyfills-es'
+        replacements: '"main-es="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/main-es,"runtime-es="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/runtime-es,"polyfills-es="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/polyfills-es,"main-es="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/main-es,"runtime-es="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/runtime-es,"polyfills-es="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/polyfills-es,"styles.="https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/styles.'
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
