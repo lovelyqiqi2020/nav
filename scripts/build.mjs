@@ -96,13 +96,15 @@ async function build() {
     t = t.replace('<!-- nav.script -->', scriptTemplate)
   }
 
-  t = t.replace('assets/logo.png', `https://raw.sevencdn.com/${authorName}/${repoName}/image/logo.png`)
-  t = t.replace('assets/logo.png', `https://raw.sevencdn.com/${authorName}/${repoName}/image/logo.png`)
-  t = t.replace('assets/logo.png', `https://raw.sevencdn.com/${authorName}/${repoName}/image/logo.png`)
-  t = t.replace('assets/logo.png', `https://raw.sevencdn.com/${authorName}/${repoName}/image/logo.png`)
-  t = t.replace('assets/logo.png', `https://raw.sevencdn.com/${authorName}/${repoName}/image/logo.png`)
+  t = t.replace('assets/logo.png', `https://cdn.jsdelivr.net/gh/${authorName}/${repoName}@gh-pages/image/logo.png`)
+  t = t.replace('assets/logo.png', `https://cdn.jsdelivr.net/gh/${authorName}/${repoName}@gh-pages/image/logo.png`)
+  t = t.replace('assets/logo.png', `https://cdn.jsdelivr.net/gh/${authorName}/${repoName}@gh-pages/image/logo.png`)
+  t = t.replace('assets/logo.png', `https://cdn.jsdelivr.net/gh/${authorName}/${repoName}@gh-pages/image/logo.png`)
+  t = t.replace('assets/logo.png', `https://cdn.jsdelivr.net/gh/${authorName}/${repoName}@gh-pages/image/logo.png`)
 
   t = t.replace('<!-- nav.seo -->', seoTemplate)
+  
+  t = t.replace('script src="main-es', `https://cdn.jsdelivr.net/gh/${authorName}/${repoName}@gh-pages/main-esmain-es`)
 
   fs.writeFileSync(htmlPath, t, { encoding: 'utf-8' })
   fs.unlinkSync('./nav.config.js')
