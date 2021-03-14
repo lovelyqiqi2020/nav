@@ -20,6 +20,13 @@ jobs:
       run: |
         npm install
         npm run build
+    - name: Replace Action
+      uses: datamonsters/replace-action@v2
+      with:
+    # Files, comma-separated. Supposed PLACEHOLDER in them
+        files: 'dist/index.html'
+    # Comma-separated pairs PLACEHOLDER=value
+        replacements: 'main-es=https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/main-es,runtime-es=https://cdn.jsdelivr.net/gh/lovelyqiqi2020/nav@gh-pages/runtime-es'
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
