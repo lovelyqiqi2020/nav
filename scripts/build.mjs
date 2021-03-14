@@ -104,8 +104,6 @@ async function build() {
 
   t = t.replace('<!-- nav.seo -->', seoTemplate)
   
-  t = t.replace('script src="main-es', `https://cdn.jsdelivr.net/gh/${authorName}/${repoName}@gh-pages/main-esmain-es`)
-
   fs.writeFileSync(htmlPath, t, { encoding: 'utf-8' })
   fs.unlinkSync('./nav.config.js')
   console.log('Build done!')
